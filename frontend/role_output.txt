@@ -1,0 +1,472 @@
+node_modules\@angular\cdk\a11y\index.d.ts:export { A as ActiveDescendantKeyManager, H as Highlightable } from '../activedescendant-key-manager.d-Bjic5obv.js';
+node_modules\@angular\cdk\a11y\index.d.ts:export { a as FocusKeyManager, F as FocusableOption } from '../focus-key-manager.d-BIKDy8oD.js';
+node_modules\@angular\cdk\a11y\index.d.ts:export { a as ListKeyManager, b as ListKeyManagerModifierKey, L as ListKeyManagerOption } from '../list-key-manager.d-BlK3jyRn.js';
+node_modules\@angular\cdk\a11y\index.d.ts:import { a as TreeKeyManagerItem, T as TreeKeyManagerStrategy, b as TreeKeyManagerFactory, c as TreeKeyManagerOptions } from '../tree-key-manager-strategy.d-XB6M79l-.js';
+node_modules\@angular\cdk\a11y\index.d.ts: * Opt-out of Tree of key manager behavior.
+node_modules\@angular\cdk\a11y\index.d.ts: * When provided, Tree has same focus management behavior as before TreeKeyManager was introduced.
+node_modules\@angular\cdk\a11y\index.d.ts: * @deprecated NoopTreeKeyManager deprecated. Use TreeKeyManager or inject a
+node_modules\@angular\cdk\a11y\index.d.ts: * TreeKeyManagerStrategy instead. To be removed in a future version.
+node_modules\@angular\cdk\a11y\index.d.ts:declare class NoopTreeKeyManager<T extends TreeKeyManagerItem> implements TreeKeyManagerStrategy<T> {
+node_modules\@angular\cdk\a11y\index.d.ts:    readonly _isNoopTreeKeyManager = true;
+node_modules\@angular\cdk\a11y\index.d.ts: * Opt-out of Tree of key manager behavior.
+node_modules\@angular\cdk\a11y\index.d.ts: * When provided, Tree has same focus management behavior as before TreeKeyManager was introduced.
+node_modules\@angular\cdk\a11y\index.d.ts: * @deprecated NoopTreeKeyManager deprecated. Use TreeKeyManager or inject a
+node_modules\@angular\cdk\a11y\index.d.ts: * TreeKeyManagerStrategy instead. To be removed in a future version.
+node_modules\@angular\cdk\a11y\index.d.ts:declare function NOOP_TREE_KEY_MANAGER_FACTORY<T extends TreeKeyManagerItem>(): TreeKeyManagerFactory<T>;
+node_modules\@angular\cdk\a11y\index.d.ts: * Opt-out of Tree of key manager behavior.
+node_modules\@angular\cdk\a11y\index.d.ts: * When provided, Tree has same focus management behavior as before TreeKeyManager was introduced.
+node_modules\@angular\cdk\a11y\index.d.ts: * @deprecated NoopTreeKeyManager deprecated. Use TreeKeyManager or inject a
+node_modules\@angular\cdk\a11y\index.d.ts: * TreeKeyManagerStrategy instead. To be removed in a future version.
+node_modules\@angular\cdk\a11y\index.d.ts:declare const NOOP_TREE_KEY_MANAGER_FACTORY_PROVIDER: Provider;
+node_modules\@angular\cdk\a11y\index.d.ts:declare class TreeKeyManager<T extends TreeKeyManagerItem> implements TreeKeyManagerStrategy<T> {
+node_modules\@angular\cdk\a11y\index.d.ts:     * by the key manager.
+node_modules\@angular\cdk\a11y\index.d.ts:     * @param items List of TreeKeyManager options. Can be synchronous or asynchronous.
+node_modules\@angular\cdk\a11y\index.d.ts:     * default, do not skip any nodes. By default, key manager only calls `focus` method when items
+node_modules\@angular\cdk\a11y\index.d.ts:    constructor(items: Observable<T[]> | QueryList<T> | T[], config: TreeKeyManagerOptions<T>);
+node_modules\@angular\cdk\a11y\index.d.ts:    /** Cleans up the key manager. */
+node_modules\@angular\cdk\a11y\index.d.ts:declare function TREE_KEY_MANAGER_FACTORY<T extends TreeKeyManagerItem>(): TreeKeyManagerFactory<T>;
+node_modules\@angular\cdk\a11y\index.d.ts:/** Injection token that determines the key manager to use. */
+node_modules\@angular\cdk\a11y\index.d.ts:declare const TREE_KEY_MANAGER: InjectionToken<TreeKeyManagerFactory<any>>;
+node_modules\@angular\cdk\a11y\index.d.ts:declare const TREE_KEY_MANAGER_FACTORY_PROVIDER: {
+node_modules\@angular\cdk\a11y\index.d.ts:    provide: InjectionToken<TreeKeyManagerFactory<any>>;
+node_modules\@angular\cdk\a11y\index.d.ts:    useFactory: typeof TREE_KEY_MANAGER_FACTORY;
+node_modules\@angular\cdk\a11y\index.d.ts: * A FocusTrap managed by FocusTrapManager.
+node_modules\@angular\cdk\a11y\index.d.ts:declare class FocusTrapManager {
+node_modules\@angular\cdk\a11y\index.d.ts:    static ɵfac: i0.ɵɵFactoryDeclaration<FocusTrapManager, never>;
+node_modules\@angular\cdk\a11y\index.d.ts:    static ɵprov: i0.ɵɵInjectableDeclaration<FocusTrapManager>;
+node_modules\@angular\cdk\a11y\index.d.ts:    private _focusTrapManager;
+node_modules\@angular\cdk\a11y\index.d.ts:    constructor(_element: HTMLElement, _checker: InteractivityChecker, _ngZone: NgZone, _document: Document, _focusTrapManager: FocusTrapManager, _inertStrategy: FocusTrapInertStrategy, config: ConfigurableFocusTrapConfig, injector?: Injector);
+node_modules\@angular\cdk\a11y\index.d.ts:    /** Notifies the FocusTrapManager that this FocusTrap will be destroyed. */
+node_modules\@angular\cdk\a11y\index.d.ts:    private _focusTrapManager;
+node_modules\@angular\cdk\a11y\index.d.ts:export { AriaDescriber, CDK_DESCRIBEDBY_HOST_ATTRIBUTE, CDK_DESCRIBEDBY_ID_PREFIX, ConfigurableFocusTrap, ConfigurableFocusTrapFactory, EventListenerFocusTrapInertStrategy, FOCUS_TRAP_INERT_STRATEGY, FocusTrap, HighContrastMode, HighContrastModeDetector, INPUT_MODALITY_DETECTOR_DEFAULT_OPTIONS, INPUT_MODALITY_DETECTOR_OPTIONS, InputModalityDetector, InteractivityChecker, MESSAGES_CONTAINER_ID, NOOP_TREE_KEY_MANAGER_FACTORY, NOOP_TREE_KEY_MANAGER_FACTORY_PROVIDER, NoopTreeKeyManager, TREE_KEY_MANAGER, TREE_KEY_MANAGER_FACTORY, TREE_KEY_MANAGER_FACTORY_PROVIDER, TreeKeyManager, TreeKeyManagerFactory, TreeKeyManagerItem, TreeKeyManagerOptions, TreeKeyManagerStrategy, _IdGenerator, addAriaReferencedId, getAriaReferenceIds, isFakeMousedownFromScreenReader, isFakeTouchstartFromScreenReader, removeAriaReferencedId };
+node_modules\@angular\cdk\activedescendant-key-manager.d-Bjic5obv.d.ts:import { L as ListKeyManagerOption, a as ListKeyManager } from './list-key-manager.d-BlK3jyRn.js';
+node_modules\@angular\cdk\activedescendant-key-manager.d-Bjic5obv.d.ts: * This is the interface for highlightable items (used by the ActiveDescendantKeyManager).
+node_modules\@angular\cdk\activedescendant-key-manager.d-Bjic5obv.d.ts:interface Highlightable extends ListKeyManagerOption {
+node_modules\@angular\cdk\activedescendant-key-manager.d-Bjic5obv.d.ts:declare class ActiveDescendantKeyManager<T> extends ListKeyManager<Highlightable & T> {
+node_modules\@angular\cdk\activedescendant-key-manager.d-Bjic5obv.d.ts:export { ActiveDescendantKeyManager as A };
+node_modules\@angular\cdk\focus-key-manager.d-BIKDy8oD.d.ts:import { L as ListKeyManagerOption, a as ListKeyManager } from './list-key-manager.d-BlK3jyRn.js';
+node_modules\@angular\cdk\focus-key-manager.d-BIKDy8oD.d.ts: * This is the interface for focusable items (used by the FocusKeyManager).
+node_modules\@angular\cdk\focus-key-manager.d-BIKDy8oD.d.ts:interface FocusableOption extends ListKeyManagerOption {
+node_modules\@angular\cdk\focus-key-manager.d-BIKDy8oD.d.ts:declare class FocusKeyManager<T> extends ListKeyManager<FocusableOption & T> {
+node_modules\@angular\cdk\focus-key-manager.d-BIKDy8oD.d.ts:export { FocusKeyManager as a };
+node_modules\@angular\cdk\list-key-manager.d-BlK3jyRn.d.ts:/** This interface is for items that can be passed to a ListKeyManager. */
+node_modules\@angular\cdk\list-key-manager.d-BlK3jyRn.d.ts:interface ListKeyManagerOption {
+node_modules\@angular\cdk\list-key-manager.d-BlK3jyRn.d.ts:/** Modifier keys handled by the ListKeyManager. */
+node_modules\@angular\cdk\list-key-manager.d-BlK3jyRn.d.ts:type ListKeyManagerModifierKey = 'altKey' | 'ctrlKey' | 'metaKey' | 'shiftKey';
+node_modules\@angular\cdk\list-key-manager.d-BlK3jyRn.d.ts:declare class ListKeyManager<T extends ListKeyManagerOption> {
+node_modules\@angular\cdk\list-key-manager.d-BlK3jyRn.d.ts:     * by the key manager. By default, disabled items are skipped.
+node_modules\@angular\cdk\list-key-manager.d-BlK3jyRn.d.ts:    /** Stream that emits whenever the active item of the list manager changes. */
+node_modules\@angular\cdk\list-key-manager.d-BlK3jyRn.d.ts:     * list key manager.
+node_modules\@angular\cdk\list-key-manager.d-BlK3jyRn.d.ts:     * Configures whether the key manager should be able to move the selection vertically.
+node_modules\@angular\cdk\list-key-manager.d-BlK3jyRn.d.ts:     * Configures the key manager to move the selection horizontally.
+node_modules\@angular\cdk\list-key-manager.d-BlK3jyRn.d.ts:    withAllowedModifierKeys(keys: ListKeyManagerModifierKey[]): this;
+node_modules\@angular\cdk\list-key-manager.d-BlK3jyRn.d.ts:     * Configures the key manager to activate the first and last items
+node_modules\@angular\cdk\list-key-manager.d-BlK3jyRn.d.ts:     * Configures the key manager to activate every 10th, configured or first/last element in up/down direction
+node_modules\@angular\cdk\list-key-manager.d-BlK3jyRn.d.ts:    /** Gets whether the user is currently typing into the manager using the typeahead feature. */
+node_modules\@angular\cdk\list-key-manager.d-BlK3jyRn.d.ts:    /** Cleans up the key manager. */
+node_modules\@angular\cdk\list-key-manager.d-BlK3jyRn.d.ts:export { ListKeyManager as a };
+node_modules\@angular\cdk\list-key-manager.d-BlK3jyRn.d.ts:export type { ListKeyManagerOption as L, ListKeyManagerModifierKey as b };
+node_modules\@angular\cdk\listbox\index.d.ts:import { H as Highlightable, A as ActiveDescendantKeyManager } from '../activedescendant-key-manager.d-Bjic5obv.js';
+node_modules\@angular\cdk\listbox\index.d.ts:import { L as ListKeyManagerOption } from '../list-key-manager.d-BlK3jyRn.js';
+node_modules\@angular\cdk\listbox\index.d.ts:declare class CdkOption<T = unknown> implements ListKeyManagerOption, Highlightable, OnDestroy {
+node_modules\@angular\cdk\listbox\index.d.ts:    /** The key manager that manages keyboard navigation for this listbox. */
+node_modules\@angular\cdk\listbox\index.d.ts:    protected listKeyManager: ActiveDescendantKeyManager<CdkOption<T>>;
+node_modules\@angular\cdk\listbox\index.d.ts:    /** Initialize the key manager. */
+node_modules\@angular\cdk\listbox\index.d.ts:    private _initKeyManager;
+node_modules\@angular\cdk\menu\index.d.ts:import { F as FocusableOption, a as FocusKeyManager } from '../focus-key-manager.d-BIKDy8oD.js';
+node_modules\@angular\cdk\menu\index.d.ts:import '../list-key-manager.d-BlK3jyRn.js';
+node_modules\@angular\cdk\menu\index.d.ts:    /** Stop the managers listeners. */
+node_modules\@angular\cdk\menu\index.d.ts:    /** Reference to the root menu's mouse manager. */
+node_modules\@angular\cdk\menu\index.d.ts:    protected keyManager: FocusKeyManager<CdkMenuItem>;
+node_modules\@angular\cdk\menu\index.d.ts:    /** Setup the FocusKeyManager with the correct orientation for the menu. */
+node_modules\@angular\cdk\menu\index.d.ts:    private _setKeyManager;
+node_modules\@angular\cdk\menu\index.d.ts:     * Set the PointerFocusTracker and ensure that when mouse focus changes the key manager is updated
+node_modules\@angular\cdk\schematics\ng-add\index.d.ts: * We just store the version in the `package.json` in case the package manager didn't. Also
+node_modules\@angular\cdk\schematics\update-tool\migration.d.ts:    /** Whether the package manager should run upon migration completion. */
+node_modules\@angular\cdk\schematics\update-tool\migration.d.ts:    runPackageManager: boolean;
+node_modules\@angular\cdk\stepper\index.d.ts:import { F as FocusableOption } from '../focus-key-manager.d-BIKDy8oD.js';
+node_modules\@angular\cdk\stepper\index.d.ts:import '../list-key-manager.d-BlK3jyRn.js';
+node_modules\@angular\cdk\stepper\index.d.ts:    private _keyManager;
+node_modules\@angular\cdk\tree\index.d.ts:import { T as TreeKeyManagerStrategy, a as TreeKeyManagerItem } from '../tree-key-manager-strategy.d-XB6M79l-.js';
+node_modules\@angular\cdk\tree\index.d.ts:     * Synchronous cache of nodes for the `TreeKeyManager`. This is separate
+node_modules\@angular\cdk\tree\index.d.ts:    private _keyManagerNodes;
+node_modules\@angular\cdk\tree\index.d.ts:    private _keyManagerFactory;
+node_modules\@angular\cdk\tree\index.d.ts:    /** The key manager for this tree. Handles focus and activation based on user keyboard input. */
+node_modules\@angular\cdk\tree\index.d.ts:    _keyManager: TreeKeyManagerStrategy<CdkTreeNode<T, K>>;
+node_modules\@angular\cdk\tree\index.d.ts:    private _initializeKeyManager;
+node_modules\@angular\cdk\tree\index.d.ts:    /** `keydown` event handler; this just passes the event to the `TreeKeyManager`. */
+node_modules\@angular\cdk\tree\index.d.ts:    protected _sendKeydownToKeyManager(event: KeyboardEvent): void;
+node_modules\@angular\cdk\tree\index.d.ts:    private _updateKeyManagerItems;
+node_modules\@angular\cdk\tree\index.d.ts:declare class CdkTreeNode<T, K = T> implements OnDestroy, OnInit, TreeKeyManagerItem {
+node_modules\@angular\cdk\tree\index.d.ts:    /** Focuses this data node. Implemented for TreeKeyManagerItem. */
+node_modules\@angular\cdk\tree\index.d.ts:    /** Emits an activation event. Implemented for TreeKeyManagerItem. */
+node_modules\@angular\cdk\tree\index.d.ts:    /** Collapses this data node. Implemented for TreeKeyManagerItem. */
+node_modules\@angular\cdk\tree\index.d.ts:    /** Expands this data node. Implemented for TreeKeyManagerItem. */
+node_modules\@angular\cdk\tree\index.d.ts:    /** Makes the node focusable. Implemented for TreeKeyManagerItem. */
+node_modules\@angular\cdk\tree-key-manager-strategy.d-XB6M79l-.d.ts:/** Represents an item within a tree that can be passed to a TreeKeyManager. */
+node_modules\@angular\cdk\tree-key-manager-strategy.d-XB6M79l-.d.ts:interface TreeKeyManagerItem {
+node_modules\@angular\cdk\tree-key-manager-strategy.d-XB6M79l-.d.ts:    getParent(): TreeKeyManagerItem | null;
+node_modules\@angular\cdk\tree-key-manager-strategy.d-XB6M79l-.d.ts:    getChildren(): TreeKeyManagerItem[] | Observable<TreeKeyManagerItem[]>;
+node_modules\@angular\cdk\tree-key-manager-strategy.d-XB6M79l-.d.ts: * Configuration for the TreeKeyManager.
+node_modules\@angular\cdk\tree-key-manager-strategy.d-XB6M79l-.d.ts:interface TreeKeyManagerOptions<T extends TreeKeyManagerItem> {
+node_modules\@angular\cdk\tree-key-manager-strategy.d-XB6M79l-.d.ts:     * If true, then the key manager will call `activate` in addition to calling `focus` when a
+node_modules\@angular\cdk\tree-key-manager-strategy.d-XB6M79l-.d.ts:     * If provided, determines how the key manager determines if two items are equivalent.
+node_modules\@angular\cdk\tree-key-manager-strategy.d-XB6M79l-.d.ts:interface TreeKeyManagerStrategy<T extends TreeKeyManagerItem> {
+node_modules\@angular\cdk\tree-key-manager-strategy.d-XB6M79l-.d.ts:     * Cleans up the key manager.
+node_modules\@angular\cdk\tree-key-manager-strategy.d-XB6M79l-.d.ts:type TreeKeyManagerFactory<T extends TreeKeyManagerItem> = (items: Observable<T[]> | QueryList<T> | T[], options: TreeKeyManagerOptions<T>) => TreeKeyManagerStrategy<T>;
+node_modules\@angular\cdk\tree-key-manager-strategy.d-XB6M79l-.d.ts:export type { TreeKeyManagerStrategy as T, TreeKeyManagerItem as a, TreeKeyManagerFactory as b, TreeKeyManagerOptions as c };
+node_modules\@angular\cli\lib\config\workspace-schema.d.ts:     * Specify which package manager tool to use.
+node_modules\@angular\cli\lib\config\workspace-schema.d.ts:    packageManager?: PackageManager;
+node_modules\@angular\cli\lib\config\workspace-schema.d.ts: * Specify which package manager tool to use.
+node_modules\@angular\cli\lib\config\workspace-schema.d.ts: * The package manager used to install dependencies.
+node_modules\@angular\cli\lib\config\workspace-schema.d.ts:export declare enum PackageManager {
+node_modules\@angular\cli\lib\config\workspace-schema.d.ts:     * The package manager used to install dependencies.
+node_modules\@angular\cli\lib\config\workspace-schema.d.ts:    packageManager?: PackageManager;
+node_modules\@angular\cli\src\analytics\analytics-parameters.d.ts:    PackageManager = "up.ng_package_manager",
+node_modules\@angular\cli\src\analytics\analytics-parameters.d.ts:    PackageManagerVersion = "up.ng_pkg_manager_version",
+node_modules\@angular\cli\src\analytics\analytics-parameters.d.ts:    PackageManagerMajorVersion = "upn.ng_pkg_manager_major_v"
+node_modules\@angular\cli\src\command-builder\command-module.d.ts:import { PackageManagerUtils } from '../utilities/package-manager';
+node_modules\@angular\cli\src\command-builder\command-module.d.ts:    packageManager: PackageManagerUtils;
+node_modules\@angular\cli\src\commands\update\cli.d.ts:    private packageManagerForce;
+node_modules\@angular\cli\src\commands\update\schematic\schema.d.ts:     * The preferred package manager configuration files to use for registry settings.
+node_modules\@angular\cli\src\commands\update\schematic\schema.d.ts:    packageManager?: PackageManager;
+node_modules\@angular\cli\src\commands\update\schematic\schema.d.ts: * The preferred package manager configuration files to use for registry settings.
+node_modules\@angular\cli\src\commands\update\schematic\schema.d.ts:export declare enum PackageManager {
+node_modules\@angular\cli\src\utilities\config.d.ts:import { PackageManager } from '../../lib/config/workspace-schema';
+node_modules\@angular\cli\src\utilities\config.d.ts:export declare function getConfiguredPackageManager(): Promise<PackageManager | null>;
+node_modules\@angular\cli\src\utilities\package-manager.d.ts:import { PackageManager } from '../../lib/config/workspace-schema';
+node_modules\@angular\cli\src\utilities\package-manager.d.ts:export interface PackageManagerUtilsContext {
+node_modules\@angular\cli\src\utilities\package-manager.d.ts:export declare class PackageManagerUtils {
+node_modules\@angular\cli\src\utilities\package-manager.d.ts:    constructor(context: PackageManagerUtilsContext);
+node_modules\@angular\cli\src\utilities\package-manager.d.ts:    /** Get the package manager name. */
+node_modules\@angular\cli\src\utilities\package-manager.d.ts:    get name(): PackageManager;
+node_modules\@angular\cli\src\utilities\package-manager.d.ts:    /** Get the package manager version. */
+node_modules\@angular\cli\src\utilities\package-manager.d.ts:    private getConfiguredPackageManager;
+node_modules\@angular\common\index.d.ts: * Defines a scroll position manager. Implemented by `BrowserViewportScroller`.
+node_modules\@angular\compiler-cli\private\migrations.d.ts:export { ImportManager } from '../src/ngtsc/translator';
+node_modules\@angular\compiler-cli\src\ngtsc\core\src\compiler.d.ts:    private resourceManager;
+node_modules\@angular\compiler-cli\src\ngtsc\imports\src\local_compilation_extra_imports_tracker.d.ts: * import manager ({@link ImportManager}) in order to have these imports generated.
+node_modules\@angular\compiler-cli\src\ngtsc\imports\src\resolver.d.ts: * Used by `RouterEntryPointManager` and `NgModuleRouteAnalyzer` (which is in turn is used by
+node_modules\@angular\compiler-cli\src\ngtsc\transform\jit\src\initializer_api_transforms\transform_api.d.ts:import { ImportManager } from '../../../../translator';
+node_modules\@angular\compiler-cli\src\ngtsc\transform\jit\src\initializer_api_transforms\transform_api.d.ts:}, sourceFile: ts.SourceFile, host: ReflectionHost, factory: ts.NodeFactory, importTracker: ImportedSymbolsTracker, importManager: ImportManager, classDecorator: Decorator, isCore: boolean) => ts.PropertyDeclaration;
+node_modules\@angular\compiler-cli\src\ngtsc\transform\jit\src\initializer_api_transforms\transform_api.d.ts:export declare function createSyntheticAngularCoreDecoratorAccess(factory: ts.NodeFactory, importManager: ImportManager, ngClassDecorator: Decorator, sourceFile: ts.SourceFile, decoratorName: string): ts.PropertyAccessExpression;
+node_modules\@angular\compiler-cli\src\ngtsc\transform\src\api.d.ts:import { ImportManager } from '../../translator';
+node_modules\@angular\compiler-cli\src\ngtsc\transform\src\api.d.ts:    transformClassElement?(element: ts.ClassElement, imports: ImportManager): ts.ClassElement;
+node_modules\@angular\compiler-cli\src\ngtsc\transform\src\api.d.ts:    transformFunctionDeclaration?(element: ts.FunctionDeclaration, imports: ImportManager): ts.FunctionDeclaration;
+node_modules\@angular\compiler-cli\src\ngtsc\transform\src\api.d.ts:    transformClass?(clazz: ts.ClassDeclaration, elements: ReadonlyArray<ts.ClassElement>, reflector: ReflectionHost, refEmitter: ReferenceEmitter, imports: ImportManager): ts.ClassDeclaration;
+node_modules\@angular\compiler-cli\src\ngtsc\transform\src\declaration.d.ts:import { ImportManager } from '../../translator';
+node_modules\@angular\compiler-cli\src\ngtsc\transform\src\declaration.d.ts:    transformClass(clazz: ts.ClassDeclaration, members: ReadonlyArray<ts.ClassElement>, reflector: ReflectionHost, refEmitter: ReferenceEmitter, imports: ImportManager): ts.ClassDeclaration;
+node_modules\@angular\compiler-cli\src\ngtsc\translator\index.d.ts:export { ImportManager, ImportManagerConfig, presetImportManagerForceNamespaceImports, } from './src/import_manager/import_manager';
+node_modules\@angular\compiler-cli\src\ngtsc\translator\src\api\import_generator.d.ts:     * Import managers may also allow this to be nullable if
+node_modules\@angular\compiler-cli\src\ngtsc\translator\src\api\import_generator.d.ts:     * !!!Warning!!! passing in this alias is considered unsafe, because the import manager won't
+node_modules\@angular\compiler-cli\src\ngtsc\translator\src\import_manager\check_unique_identifier_name.d.ts:import type { ImportManagerConfig } from './import_manager';
+node_modules\@angular\compiler-cli\src\ngtsc\translator\src\import_manager\check_unique_identifier_name.d.ts: * Generates a helper for `ImportManagerConfig` to generate unique identifiers
+node_modules\@angular\compiler-cli\src\ngtsc\translator\src\import_manager\check_unique_identifier_name.d.ts:export declare function createGenerateUniqueIdentifierHelper(): ImportManagerConfig['generateUniqueIdentifier'];
+node_modules\@angular\compiler-cli\src\ngtsc\translator\src\import_manager\import_manager.d.ts:/** Configuration for the import manager. */
+node_modules\@angular\compiler-cli\src\ngtsc\translator\src\import_manager\import_manager.d.ts:export interface ImportManagerConfig {
+node_modules\@angular\compiler-cli\src\ngtsc\translator\src\import_manager\import_manager.d.ts: * versions of the `ImportManager`.
+node_modules\@angular\compiler-cli\src\ngtsc\translator\src\import_manager\import_manager.d.ts:export declare const presetImportManagerForceNamespaceImports: Partial<ImportManagerConfig>;
+node_modules\@angular\compiler-cli\src\ngtsc\translator\src\import_manager\import_manager.d.ts: * Import manager that can be used to conveniently and efficiently generate
+node_modules\@angular\compiler-cli\src\ngtsc\translator\src\import_manager\import_manager.d.ts:export declare class ImportManager implements ImportGenerator<ts.SourceFile, ts.Identifier | ts.PropertyAccessExpression> {
+node_modules\@angular\compiler-cli\src\ngtsc\translator\src\import_manager\import_manager.d.ts:    constructor(config?: Partial<ImportManagerConfig>);
+node_modules\@angular\compiler-cli\src\ngtsc\translator\src\import_manager\import_manager.d.ts:     * Finalizes the import manager by computing all necessary import changes
+node_modules\@angular\compiler-cli\src\ngtsc\translator\src\import_manager\import_manager.d.ts:     * Gets a TypeScript transform for the import manager.
+node_modules\@angular\compiler-cli\src\ngtsc\translator\src\import_manager\import_typescript_transform.d.ts:import type { ImportManager } from './import_manager';
+node_modules\@angular\compiler-cli\src\ngtsc\translator\src\import_manager\import_typescript_transform.d.ts: * Creates a TypeScript transform for the given import manager.
+node_modules\@angular\compiler-cli\src\ngtsc\translator\src\import_manager\import_typescript_transform.d.ts: *  - The transform deletes any nodes that are marked for deletion by the manager.
+node_modules\@angular\compiler-cli\src\ngtsc\translator\src\import_manager\import_typescript_transform.d.ts:export declare function createTsTransformForImportManager(manager: ImportManager, extraStatementsForFiles?: Map<string, ts.Statement[]>): ts.TransformerFactory<ts.SourceFile>;
+node_modules\@angular\compiler-cli\src\ngtsc\translator\src\import_manager\reuse_generated_imports.d.ts:import type { ModuleName } from './import_manager';
+node_modules\@angular\compiler-cli\src\ngtsc\translator\src\import_manager\reuse_source_file_imports.d.ts: * referenced due to the import manager.
+node_modules\@angular\compiler-cli\src\ngtsc\translator\src\type_translator.d.ts:import { ImportManager } from './import_manager/import_manager';
+node_modules\@angular\compiler-cli\src\ngtsc\translator\src\type_translator.d.ts:export declare function translateType(type: o.Type, contextFile: ts.SourceFile, reflector: ReflectionHost, refEmitter: ReferenceEmitter, imports: ImportManager): ts.TypeNode;
+node_modules\@angular\compiler-cli\src\ngtsc\typecheck\src\checker.d.ts:import { DirectiveSourceManager } from './source';
+node_modules\@angular\compiler-cli\src\ngtsc\typecheck\src\checker.d.ts:    sourceManager: DirectiveSourceManager;
+node_modules\@angular\compiler-cli\src\ngtsc\typecheck\src\context.d.ts:import { DirectiveSourceManager } from './source';
+node_modules\@angular\compiler-cli\src\ngtsc\typecheck\src\context.d.ts:    sourceManager: DirectiveSourceManager;
+node_modules\@angular\compiler-cli\src\ngtsc\typecheck\src\context.d.ts:     * Retrieve the `DirectiveSourceManager` responsible for directives in the given input file path.
+node_modules\@angular\compiler-cli\src\ngtsc\typecheck\src\context.d.ts:    getSourceManager(sfPath: AbsoluteFsPath): DirectiveSourceManager;
+node_modules\@angular\compiler-cli\src\ngtsc\typecheck\src\environment.d.ts:import { ImportManager } from '../../translator';
+node_modules\@angular\compiler-cli\src\ngtsc\typecheck\src\environment.d.ts:    constructor(config: TypeCheckingConfig, importManager: ImportManager, refEmitter: ReferenceEmitter, reflector: ReflectionHost, contextFile: ts.SourceFile);
+node_modules\@angular\compiler-cli\src\ngtsc\typecheck\src\reference_emit_environment.d.ts:import { ImportManager } from '../../translator';
+node_modules\@angular\compiler-cli\src\ngtsc\typecheck\src\reference_emit_environment.d.ts:    readonly importManager: ImportManager;
+node_modules\@angular\compiler-cli\src\ngtsc\typecheck\src\reference_emit_environment.d.ts:    constructor(importManager: ImportManager, refEmitter: ReferenceEmitter, reflector: ReflectionHost, contextFile: ts.SourceFile);
+node_modules\@angular\compiler-cli\src\ngtsc\typecheck\src\source.d.ts:export declare class DirectiveSourceManager implements TypeCheckSourceResolver {
+node_modules\@angular\core\event_dispatcher.d-K56StcHr.d.ts: * An `EventContractContainerManager` provides the common interface for managing
+node_modules\@angular\core\event_dispatcher.d-K56StcHr.d.ts:interface EventContractContainerManager {
+node_modules\@angular\core\event_dispatcher.d-K56StcHr.d.ts:declare class EventContractContainer implements EventContractContainerManager {
+node_modules\@angular\core\event_dispatcher.d-K56StcHr.d.ts:    private containerManager;
+node_modules\@angular\core\event_dispatcher.d-K56StcHr.d.ts:    constructor(containerManager: EventContractContainerManager);
+node_modules\@angular\core\index.d.ts:declare class AfterRenderManager {
+node_modules\@angular\core\index.d.ts:    /** Whether the `AfterRenderManager` is currently executing hooks. */
+node_modules\@angular\core\index.d.ts:    private readonly afterRenderManager;
+node_modules\@angular\core\index.d.ts:export { ANIMATION_MODULE_TYPE, APP_BOOTSTRAP_LISTENER, APP_ID, APP_INITIALIZER, AfterRenderPhase, ApplicationInitStatus, ApplicationModule, ApplicationRef, Attribute, COMPILER_OPTIONS, CSP_NONCE, CUSTOM_ELEMENTS_SCHEMA, ChangeDetectionStrategy$1 as ChangeDetectionStrategy, ChangeDetectorRef, Compiler, CompilerFactory, Component, ComponentFactory$1 as ComponentFactory, ComponentFactoryResolver$1 as ComponentFactoryResolver, ComponentRef$1 as ComponentRef, ContentChild, ContentChildren, DEFAULT_CURRENCY_CODE, DebugElement, DebugEventListener, DebugNode, DefaultIterableDiffer, DestroyRef, Directive, ENVIRONMENT_INITIALIZER, ElementRef, EmbeddedViewRef, EnvironmentInjector, ErrorHandler, EventEmitter, HOST_TAG_NAME, Host, HostAttributeToken, HostBinding, HostListener, INJECTOR, Inject, InjectFlags, Injectable, InjectionToken, Injector, Input, IterableDiffers, KeyValueDiffers, LOCALE_ID, MissingTranslationStrategy, ModuleWithComponentFactories, NO_ERRORS_SCHEMA, NgModule, NgModuleFactory$1 as NgModuleFactory, NgModuleRef$1 as NgModuleRef, NgProbeToken, NgZone, Optional, Output, OutputEmitterRef, PACKAGE_ROOT_URL, PLATFORM_ID, PLATFORM_INITIALIZER, PendingTasks, Pipe, PlatformRef, Query, QueryList, REQUEST, REQUEST_CONTEXT, RESPONSE_INIT, Renderer2, RendererFactory2, RendererStyleFlags2, ResourceStatus, Sanitizer, SecurityContext, Self, SimpleChange, SkipSelf, TRANSLATIONS, TRANSLATIONS_FORMAT, TemplateRef, Testability, TestabilityRegistry, TransferState, Type$1 as Type, VERSION, Version, ViewChild, ViewChildren, ViewContainerRef, ViewEncapsulation$1 as ViewEncapsulation, ViewRef$1 as ViewRef, afterNextRender, afterRender, afterRenderEffect, asNativeElements, assertInInjectionContext, assertNotInReactiveContext, assertPlatform, booleanAttribute, computed, contentChild, contentChildren, createComponent, createEnvironmentInjector, createNgModule, createNgModuleRef, createPlatform, createPlatformFactory, defineInjectable, destroyPlatform, effect, enableProdMode, forwardRef, getDebugNode, getModuleFactory, getNgModuleById, getPlatform, importProvidersFrom, inject, input, isDevMode, isSignal, isStandalone, linkedSignal, makeEnvironmentProviders, makeStateKey, mergeApplicationConfig, model, numberAttribute, output, platformCore, provideAppInitializer, provideEnvironmentInitializer, provideExperimentalCheckNoChangesForDebug, provideExperimentalZonelessChangeDetection, providePlatformInitializer, provideZoneChangeDetection, reflectComponentType, resolveForwardRef, resource, runInInjectionContext, setTestabilityGetter, signal, untracked, viewChild, viewChildren, AfterRenderManager as ɵAfterRenderManager, AnimationRendererType as ɵAnimationRendererType, AttributeMarker as ɵAttributeMarker, BypassType as ɵBypassType, CLIENT_RENDER_MODE_FLAG as ɵCLIENT_RENDER_MODE_FLAG, CONTAINER_HEADER_OFFSET as ɵCONTAINER_HEADER_OFFSET, ChangeDetectionScheduler as ɵChangeDetectionScheduler, ChangeDetectionSchedulerImpl as ɵChangeDetectionSchedulerImpl, ComponentFactory$1 as ɵComponentFactory, Console as ɵConsole, CurrencyIndex as ɵCurrencyIndex, DEFAULT_LOCALE_ID as ɵDEFAULT_LOCALE_ID, DEFER_BLOCK_CONFIG as ɵDEFER_BLOCK_CONFIG, DEFER_BLOCK_DEPENDENCY_INTERCEPTOR as ɵDEFER_BLOCK_DEPENDENCY_INTERCEPTOR, DEHYDRATED_BLOCK_REGISTRY as ɵDEHYDRATED_BLOCK_REGISTRY, DeferBlockBehavior as ɵDeferBlockBehavior, DeferBlockState as ɵDeferBlockState, ENABLE_ROOT_COMPONENT_BOOTSTRAP as ɵENABLE_ROOT_COMPONENT_BOOTSTRAP, EffectScheduler as ɵEffectScheduler, ExtraLocaleDataIndex as ɵExtraLocaleDataIndex, HydrationStatus as ɵHydrationStatus, IMAGE_CONFIG as ɵIMAGE_CONFIG, IMAGE_CONFIG_DEFAULTS as ɵIMAGE_CONFIG_DEFAULTS, INJECTOR_SCOPE as ɵINJECTOR_SCOPE, ɵINPUT_SIGNAL_BRAND_WRITE_TYPE, INTERNAL_APPLICATION_ERROR_HANDLER as ɵINTERNAL_APPLICATION_ERROR_HANDLER, IS_HYDRATION_DOM_REUSE_ENABLED as ɵIS_HYDRATION_DOM_REUSE_ENABLED, IS_INCREMENTAL_HYDRATION_ENABLED as ɵIS_INCREMENTAL_HYDRATION_ENABLED, JSACTION_BLOCK_ELEMENT_MAP as ɵJSACTION_BLOCK_ELEMENT_MAP, JSACTION_EVENT_CONTRACT as ɵJSACTION_EVENT_CONTRACT, LContext as ɵLContext, LocaleDataIndex as ɵLocaleDataIndex, MicrotaskEffectScheduler as ɵMicrotaskEffectScheduler, NG_COMP_DEF as ɵNG_COMP_DEF, NG_DIR_DEF as ɵNG_DIR_DEF, NG_ELEMENT_ID as ɵNG_ELEMENT_ID, NG_INJ_DEF as ɵNG_INJ_DEF, NG_MOD_DEF as ɵNG_MOD_DEF, NG_PIPE_DEF as ɵNG_PIPE_DEF, NG_PROV_DEF as ɵNG_PROV_DEF, NOT_FOUND_CHECK_ONLY_ELEMENT_INJECTOR as ɵNOT_FOUND_CHECK_ONLY_ELEMENT_INJECTOR, NO_CHANGE as ɵNO_CHANGE, NgModuleFactory as ɵNgModuleFactory, NoopNgZone as ɵNoopNgZone, NotificationSource as ɵNotificationSource, PERFORMANCE_MARK_PREFIX as ɵPERFORMANCE_MARK_PREFIX, PROVIDED_NG_ZONE as ɵPROVIDED_NG_ZONE, PendingTasksInternal as ɵPendingTasksInternal, ProfilerEvent as ɵProfilerEvent, R3Injector as ɵR3Injector, ReflectionCapabilities as ɵReflectionCapabilities, ComponentFactory as ɵRender3ComponentFactory, ComponentRef as ɵRender3ComponentRef, NgModuleRef as ɵRender3NgModuleRef, RenderFlags as ɵRenderFlags, ResourceImpl as ɵResourceImpl, RuntimeError as ɵRuntimeError, RuntimeErrorCode as ɵRuntimeErrorCode, SIGNAL as ɵSIGNAL, SSR_CONTENT_INTEGRITY_MARKER as ɵSSR_CONTENT_INTEGRITY_MARKER, TESTABILITY as ɵTESTABILITY, TESTABILITY_GETTER as ɵTESTABILITY_GETTER, TimerScheduler as ɵTimerScheduler, TracingAction as ɵTracingAction, TracingService as ɵTracingService, USE_RUNTIME_DEPS_TRACKER_FOR_JIT as ɵUSE_RUNTIME_DEPS_TRACKER_FOR_JIT, ViewRef as ɵViewRef, XSS_SECURITY_URL as ɵXSS_SECURITY_URL, ZONELESS_ENABLED as ɵZONELESS_ENABLED, _sanitizeHtml as ɵ_sanitizeHtml, _sanitizeUrl as ɵ_sanitizeUrl, allowSanitizationBypassAndThrow as ɵallowSanitizationBypassAndThrow, annotateForHydration as ɵannotateForHydration, bypassSanitizationTrustHtml as ɵbypassSanitizationTrustHtml, bypassSanitizationTrustResourceUrl as ɵbypassSanitizationTrustResourceUrl, bypassSanitizationTrustScript as ɵbypassSanitizationTrustScript, bypassSanitizationTrustStyle as ɵbypassSanitizationTrustStyle, bypassSanitizationTrustUrl as ɵbypassSanitizationTrustUrl, clearResolutionOfComponentResourcesQueue as ɵclearResolutionOfComponentResourcesQueue, compileComponent as ɵcompileComponent, compileDirective as ɵcompileDirective, compileNgModule as ɵcompileNgModule, compileNgModuleDefs as ɵcompileNgModuleDefs, compileNgModuleFactory as ɵcompileNgModuleFactory, compilePipe as ɵcompilePipe, convertToBitFlags as ɵconvertToBitFlags, createInjector as ɵcreateInjector, createOrReusePlatformInjector as ɵcreateOrReusePlatformInjector, defaultIterableDiffers as ɵdefaultIterableDiffers, defaultKeyValueDiffers as ɵdefaultKeyValueDiffers, depsTracker as ɵdepsTracker, detectChangesInViewIfRequired as ɵdetectChangesInViewIfRequired, devModeEqual as ɵdevModeEqual, disableProfiling as ɵdisableProfiling, enableProfiling as ɵenableProfiling, findLocaleData as ɵfindLocaleData, flushModuleScopingQueueAsMuchAsPossible as ɵflushModuleScopingQueueAsMuchAsPossible, formatRuntimeError as ɵformatRuntimeError, generateStandaloneInDeclarationsError as ɵgenerateStandaloneInDeclarationsError, getAsyncClassMetadataFn as ɵgetAsyncClassMetadataFn, getClosestComponentName as ɵgetClosestComponentName, getComponentDef as ɵgetComponentDef, getDebugNode as ɵgetDebugNode, getDeferBlocks$1 as ɵgetDeferBlocks, getDirectives as ɵgetDirectives, getDocument as ɵgetDocument, getHostElement as ɵgetHostElement, getInjectableDef as ɵgetInjectableDef, getLContext as ɵgetLContext, getLocaleCurrencyCode as ɵgetLocaleCurrencyCode, getLocalePluralCase as ɵgetLocalePluralCase, getOutputDestroyRef as ɵgetOutputDestroyRef, getSanitizationBypassType as ɵgetSanitizationBypassType, ɵgetUnknownElementStrictMode, ɵgetUnknownPropertyStrictMode, _global as ɵglobal, injectChangeDetectorRef as ɵinjectChangeDetectorRef, internalCreateApplication as ɵinternalCreateApplication, internalProvideZoneChangeDetection as ɵinternalProvideZoneChangeDetection, isBoundToModule as ɵisBoundToModule, isComponentDefPendingResolution as ɵisComponentDefPendingResolution, isEnvironmentProviders as ɵisEnvironmentProviders, isInjectable as ɵisInjectable, isNgModule as ɵisNgModule, isPromise as ɵisPromise, isSubscribable as ɵisSubscribable, isViewDirty as ɵisViewDirty, markForRefresh as ɵmarkForRefresh, microtaskEffect as ɵmicrotaskEffect, noSideEffects as ɵnoSideEffects, patchComponentDefWithScope as ɵpatchComponentDefWithScope, performanceMarkFeature as ɵperformanceMarkFeature, publishExternalGlobalUtil as ɵpublishExternalGlobalUtil, readHydrationInfo as ɵreadHydrationInfo, registerLocaleData as ɵregisterLocaleData, renderDeferBlockState as ɵrenderDeferBlockState, resetCompiledComponents as ɵresetCompiledComponents, resetJitOptions as ɵresetJitOptions, resolveComponentResources as ɵresolveComponentResources, restoreComponentResolutionQueue as ɵrestoreComponentResolutionQueue, setAllowDuplicateNgModuleIdsForTest as ɵsetAllowDuplicateNgModuleIdsForTest, ɵsetClassDebugInfo, setClassMetadata as ɵsetClassMetadata, setClassMetadataAsync as ɵsetClassMetadataAsync, setDocument as ɵsetDocument, setInjectorProfilerContext as ɵsetInjectorProfilerContext, setLocaleId as ɵsetLocaleId, ɵsetUnknownElementStrictMode, ɵsetUnknownPropertyStrictMode, startMeasuring as ɵstartMeasuring, stopMeasuring as ɵstopMeasuring, store as ɵstore, stringify as ɵstringify, transitiveScopesFor as ɵtransitiveScopesFor, triggerResourceLoading as ɵtriggerResourceLoading, truncateMiddle as ɵtruncateMiddle, unregisterAllLocaleData as ɵunregisterLocaleData, unwrapSafeValue as ɵunwrapSafeValue, ɵunwrapWritableSignal, withDomHydration as ɵwithDomHydration, withEventReplay as ɵwithEventReplay, withI18nSupport as ɵwithI18nSupport, withIncrementalHydration as ɵwithIncrementalHydration, ɵɵCopyDefinitionFeature, ɵɵExternalStylesFeature, FactoryTarget as ɵɵFactoryTarget, ɵɵHostDirectivesFeature, ɵɵInheritDefinitionFeature, ɵɵNgOnChangesFeature, ɵɵProvidersFeature, ɵɵadvance, ɵɵattachSourceLocations, ɵɵattribute, ɵɵattributeInterpolate1, ɵɵattributeInterpolate2, ɵɵattributeInterpolate3, ɵɵattributeInterpolate4, ɵɵattributeInterpolate5, ɵɵattributeInterpolate6, ɵɵattributeInterpolate7, ɵɵattributeInterpolate8, ɵɵattributeInterpolateV, ɵɵclassMap, ɵɵclassMapInterpolate1, ɵɵclassMapInterpolate2, ɵɵclassMapInterpolate3, ɵɵclassMapInterpolate4, ɵɵclassMapInterpolate5, ɵɵclassMapInterpolate6, ɵɵclassMapInterpolate7, ɵɵclassMapInterpolate8, ɵɵclassMapInterpolateV, ɵɵclassProp, ɵɵcomponentInstance, ɵɵconditional, ɵɵcontentQuery, ɵɵcontentQuerySignal, ɵɵdeclareLet, ɵɵdefer, ɵɵdeferEnableTimerScheduling, ɵɵdeferHydrateNever, ɵɵdeferHydrateOnHover, ɵɵdeferHydrateOnIdle, ɵɵdeferHydrateOnImmediate, ɵɵdeferHydrateOnInteraction, ɵɵdeferHydrateOnTimer, ɵɵdeferHydrateOnViewport, ɵɵdeferHydrateWhen, ɵɵdeferOnHover, ɵɵdeferOnIdle, ɵɵdeferOnImmediate, ɵɵdeferOnInteraction, ɵɵdeferOnTimer, ɵɵdeferOnViewport, ɵɵdeferPrefetchOnHover, ɵɵdeferPrefetchOnIdle, ɵɵdeferPrefetchOnImmediate, ɵɵdeferPrefetchOnInteraction, ɵɵdeferPrefetchOnTimer, ɵɵdeferPrefetchOnViewport, ɵɵdeferPrefetchWhen, ɵɵdeferWhen, ɵɵdefineComponent, ɵɵdefineDirective, ɵɵdefineInjectable, ɵɵdefineInjector, ɵɵdefineNgModule, ɵɵdefinePipe, ɵɵdirectiveInject, ɵɵdisableBindings, ɵɵelement, ɵɵelementContainer, ɵɵelementContainerEnd, ɵɵelementContainerStart, ɵɵelementEnd, ɵɵelementStart, ɵɵenableBindings, ɵɵgetComponentDepsFactory, ɵɵgetCurrentView, ɵɵgetInheritedFactory, ɵɵgetReplaceMetadataURL, ɵɵhostProperty, ɵɵi18n, ɵɵi18nApply, ɵɵi18nAttributes, ɵɵi18nEnd, ɵɵi18nExp, ɵɵi18nPostprocess, ɵɵi18nStart, ɵɵinject, ɵɵinjectAttribute, ɵɵinvalidFactory, ɵɵinvalidFactoryDep, ɵɵlistener, ɵɵloadQuery, ɵɵnamespaceHTML, ɵɵnamespaceMathML, ɵɵnamespaceSVG, ɵɵnextContext, ɵɵngDeclareClassMetadata, ɵɵngDeclareClassMetadataAsync, ɵɵngDeclareComponent, ɵɵngDeclareDirective, ɵɵngDeclareFactory, ɵɵngDeclareInjectable, ɵɵngDeclareInjector, ɵɵngDeclareNgModule, ɵɵngDeclarePipe, ɵɵpipe, ɵɵpipeBind1, ɵɵpipeBind2, ɵɵpipeBind3, ɵɵpipeBind4, ɵɵpipeBindV, ɵɵprojection, ɵɵprojectionDef, ɵɵproperty, ɵɵpropertyInterpolate, ɵɵpropertyInterpolate1, ɵɵpropertyInterpolate2, ɵɵpropertyInterpolate3, ɵɵpropertyInterpolate4, ɵɵpropertyInterpolate5, ɵɵpropertyInterpolate6, ɵɵpropertyInterpolate7, ɵɵpropertyInterpolate8, ɵɵpropertyInterpolateV, ɵɵpureFunction0, ɵɵpureFunction1, ɵɵpureFunction2, ɵɵpureFunction3, ɵɵpureFunction4, ɵɵpureFunction5, ɵɵpureFunction6, ɵɵpureFunction7, ɵɵpureFunction8, ɵɵpureFunctionV, ɵɵqueryAdvance, ɵɵqueryRefresh, ɵɵreadContextLet, ɵɵreference, registerNgModuleType as ɵɵregisterNgModuleType, ɵɵrepeater, ɵɵrepeaterCreate, ɵɵrepeaterTrackByIdentity, ɵɵrepeaterTrackByIndex, ɵɵreplaceMetadata, ɵɵresetView, ɵɵresolveBody, ɵɵresolveDocument, ɵɵresolveWindow, ɵɵrestoreView, ɵɵsanitizeHtml, ɵɵsanitizeResourceUrl, ɵɵsanitizeScript, ɵɵsanitizeStyle, ɵɵsanitizeUrl, ɵɵsanitizeUrlOrResourceUrl, ɵɵsetComponentScope, ɵɵsetNgModuleScope, ɵɵstoreLet, ɵɵstyleMap, ɵɵstyleMapInterpolate1, ɵɵstyleMapInterpolate2, ɵɵstyleMapInterpolate3, ɵɵstyleMapInterpolate4, ɵɵstyleMapInterpolate5, ɵɵstyleMapInterpolate6, ɵɵstyleMapInterpolate7, ɵɵstyleMapInterpolate8, ɵɵstyleMapInterpolateV, ɵɵstyleProp, ɵɵstylePropInterpolate1, ɵɵstylePropInterpolate2, ɵɵstylePropInterpolate3, ɵɵstylePropInterpolate4, ɵɵstylePropInterpolate5, ɵɵstylePropInterpolate6, ɵɵstylePropInterpolate7, ɵɵstylePropInterpolate8, ɵɵstylePropInterpolateV, ɵɵsyntheticHostListener, ɵɵsyntheticHostProperty, ɵɵtemplate, ɵɵtemplateRefExtractor, ɵɵtext, ɵɵtextInterpolate, ɵɵtextInterpolate1, ɵɵtextInterpolate2, ɵɵtextInterpolate3, ɵɵtextInterpolate4, ɵɵtextInterpolate5, ɵɵtextInterpolate6, ɵɵtextInterpolate7, ɵɵtextInterpolate8, ɵɵtextInterpolateV, ɵɵtrustConstantHtml, ɵɵtrustConstantResourceUrl, ɵɵtwoWayBindingSet, ɵɵtwoWayListener, ɵɵtwoWayProperty, ɵɵvalidateAttribute, ɵɵviewQuery, ɵɵviewQuerySignal };
+node_modules\@angular\material\autocomplete\index.d.ts:import { ActiveDescendantKeyManager } from '@angular/cdk/a11y';
+node_modules\@angular\material\autocomplete\index.d.ts:    _keyManager: ActiveDescendantKeyManager<MatOption>;
+node_modules\@angular\material\chips\index.d.ts:import { FocusKeyManager } from '@angular/cdk/a11y';
+node_modules\@angular\material\chips\index.d.ts:    protected _keyManager: FocusKeyManager<MatChipAction>;
+node_modules\@angular\material\chips\index.d.ts:     * Determines if key manager should avoid putting a given chip action in the tab index. Skip
+node_modules\@angular\material\chips\index.d.ts:     * Determines if key manager should avoid putting a given chip action in the tab index. Skip
+node_modules\@angular\material\expansion\index.d.ts:    private _keyManager;
+node_modules\@angular\material\list\index.d.ts:    private _keyManager;
+node_modules\@angular\material\list\index.d.ts:     * `skipPredicate` determines if key manager should avoid putting a given list item in the tab
+node_modules\@angular\material\menu\index.d.ts:    private _keyManager;
+node_modules\@angular\material\module.d-CyLvt0Fz.d.ts:import { ActiveDescendantKeyManager } from '@angular/cdk/a11y';
+node_modules\@angular\material\module.d-CyLvt0Fz.d.ts:    _keyManager: ActiveDescendantKeyManager<MatOption>;
+node_modules\@angular\material\module.d-CyLvt0Fz.d.ts:    /** Sets up a key manager to listen to keyboard events on the overlay panel. */
+node_modules\@angular\material\module.d-CyLvt0Fz.d.ts:    private _initKeyManager;
+node_modules\@angular\material\option.d-BVGX3edu.d.ts:     * active. This is used by the ActiveDescendantKeyManager so key
+node_modules\@angular\material\option.d-BVGX3edu.d.ts:     * active. This is used by the ActiveDescendantKeyManager so key
+node_modules\@angular\material\ripple.d-BxTUZJt7.d.ts:    private static _eventManager;
+node_modules\@angular\material\tabs\index.d.ts:import { FocusKeyManager, FocusableOption, FocusOrigin } from '@angular/cdk/a11y';
+node_modules\@angular\material\tabs\index.d.ts:    protected _keyManager: FocusKeyManager<MatPaginatedTabHeaderItem> | undefined;
+node_modules\@angular\material\timepicker\index.d.ts:    private _keyManager;
+node_modules\@angular\material\tree\index.d.ts:     * @deprecated By default MatTreeNode manages focus using TreeKeyManager instead of tabIndex.
+node_modules\@angular\material\tree\index.d.ts:     *   Recommend to avoid setting tabIndex directly to prevent TreeKeyManager form getting into
+node_modules\@angular\material\tree\index.d.ts:     * @deprecated By default MatTreeNode manages focus using TreeKeyManager instead of tabIndex.
+node_modules\@angular\material\tree\index.d.ts:     *   Recommend to avoid setting tabIndex directly to prevent TreeKeyManager form getting into
+node_modules\@angular\platform-browser\index.d.ts: * The injection token for plugins of the `EventManager` service.
+node_modules\@angular\platform-browser\index.d.ts:declare const EVENT_MANAGER_PLUGINS: InjectionToken<EventManagerPlugin[]>;
+node_modules\@angular\platform-browser\index.d.ts:declare class EventManager {
+node_modules\@angular\platform-browser\index.d.ts:     * Initializes an instance of the event-manager service.
+node_modules\@angular\platform-browser\index.d.ts:    constructor(plugins: EventManagerPlugin[], _zone: NgZone);
+node_modules\@angular\platform-browser\index.d.ts:    static ɵfac: i0.ɵɵFactoryDeclaration<EventManager, never>;
+node_modules\@angular\platform-browser\index.d.ts:    static ɵprov: i0.ɵɵInjectableDeclaration<EventManager>;
+node_modules\@angular\platform-browser\index.d.ts: * The plugin definition for the `EventManager` class
+node_modules\@angular\platform-browser\index.d.ts: * It can be used as a base class to create custom manager plugins, i.e. you can create your own
+node_modules\@angular\platform-browser\index.d.ts: * class that extends the `EventManagerPlugin` one.
+node_modules\@angular\platform-browser\index.d.ts:declare abstract class EventManagerPlugin {
+node_modules\@angular\platform-browser\index.d.ts:    manager: EventManager;
+node_modules\@angular\platform-browser\index.d.ts:    private readonly eventManager;
+node_modules\@angular\platform-browser\index.d.ts:    constructor(eventManager: EventManager, sharedStylesHost: SharedStylesHost, appId: string, removeStylesOnCompDestroy: boolean, doc: Document, platformId: Object, ngZone: NgZone, nonce?: string | null, tracingService?: _TracingService<_TracingSnapshot> | null);
+node_modules\@angular\platform-browser\index.d.ts: * An injectable [HammerJS Manager](https://hammerjs.github.io/api/#hammermanager)
+node_modules\@angular\platform-browser\index.d.ts:        enable?: boolean | ((manager: any) => boolean);
+node_modules\@angular\platform-browser\index.d.ts:     * Creates a [HammerJS Manager](https://hammerjs.github.io/api/#hammermanager)
+node_modules\@angular\platform-browser\index.d.ts:     * @returns A HammerJS event-manager object.
+node_modules\@angular\platform-browser\index.d.ts:declare class HammerGesturesPlugin extends EventManagerPlugin {
+node_modules\@angular\platform-browser\index.d.ts: * simply sets up the coordination layer between HammerJS and Angular's `EventManager`.
+node_modules\@angular\platform-browser\index.d.ts:declare class DomEventsPlugin extends EventManagerPlugin {
+node_modules\@angular\platform-browser\index.d.ts:declare class KeyEventsPlugin extends EventManagerPlugin {
+node_modules\@angular\platform-browser\index.d.ts:export { By, DomSanitizer, EVENT_MANAGER_PLUGINS, EventManager, EventManagerPlugin, HAMMER_GESTURE_CONFIG, HAMMER_LOADER, HammerGestureConfig, HammerModule, HydrationFeatureKind, Meta, REMOVE_STYLES_ON_COMPONENT_DESTROY, Title, VERSION, disableDebugTools, enableDebugTools, provideClientHydration, withEventReplay, withHttpTransferCacheOptions, withI18nSupport, withIncrementalHydration, withNoHttpTransferCache, BrowserDomAdapter as ɵBrowserDomAdapter, BrowserGetTestability as ɵBrowserGetTestability, DomEventsPlugin as ɵDomEventsPlugin, DomRendererFactory2 as ɵDomRendererFactory2, DomSanitizerImpl as ɵDomSanitizerImpl, HammerGesturesPlugin as ɵHammerGesturesPlugin, KeyEventsPlugin as ɵKeyEventsPlugin, RuntimeErrorCode as ɵRuntimeErrorCode, SharedStylesHost as ɵSharedStylesHost };
+node_modules\@angular\router\router_module.d-Bx9ArA6K.d.ts:    private readonly stateManager;
+node_modules\@angular-devkit\build-angular\src\tools\webpack\plugins\dedupe-module-resolve-plugin.d.ts: * This is needed because Webpack relies on package managers to hoist modules and doesn't have any deduping logic.
+node_modules\@angular-devkit\schematics\tasks\index.d.ts:export { NodePackageInstallTask } from './package-manager/install-task';
+node_modules\@angular-devkit\schematics\tasks\index.d.ts:export { NodePackageLinkTask } from './package-manager/link-task';
+node_modules\@angular-devkit\schematics\tasks\node\index.d.ts:import { NodePackageTaskFactoryOptions } from '../package-manager/options';
+node_modules\@angular-devkit\schematics\tasks\package-manager\executor.d.ts:export declare class UnknownPackageManagerException extends BaseException {
+node_modules\@angular-devkit\schematics\tasks\package-manager\install-task.d.ts:    packageManager?: string;
+node_modules\@angular-devkit\schematics\tasks\package-manager\install-task.d.ts:    packageManager?: string;
+node_modules\@angular-devkit\schematics\tasks\package-manager\options.d.ts:    packageManager?: string;
+node_modules\@angular-devkit\schematics\tasks\package-manager\options.d.ts:    allowPackageManagerOverride?: boolean;
+node_modules\@angular-devkit\schematics\tasks\package-manager\options.d.ts:    packageManager?: string;
+node_modules\@angular-devkit\schematics\tools\workflow\node-workflow.d.ts:    packageManager?: string;
+node_modules\@angular-devkit\schematics\tools\workflow\node-workflow.d.ts:    packageManagerForce?: boolean;
+node_modules\@inquirer\core\dist\commonjs\lib\screen-manager.d.ts:export default class ScreenManager {
+node_modules\@inquirer\core\dist\esm\lib\screen-manager.d.ts:export default class ScreenManager {
+node_modules\@jsonjoy.com\fs-fsa\lib\FileLockManager.d.ts:export declare class FileLockManager {
+node_modules\@jsonjoy.com\fs-fsa\lib\index.d.ts:export * from './FileLockManager';
+node_modules\@jsonjoy.com\fs-fsa\lib\types.d.ts:import type { FileLockManager } from './FileLockManager';
+node_modules\@jsonjoy.com\fs-fsa\lib\types.d.ts:    /** File lock manager for this context. */
+node_modules\@jsonjoy.com\fs-fsa\lib\types.d.ts:    locks: FileLockManager;
+node_modules\@jsonjoy.com\fs-node-to-fsa\lib\types.d.ts:import type { FileLockManager } from '@jsonjoy.com/fs-fsa';
+node_modules\@jsonjoy.com\fs-node-to-fsa\lib\types.d.ts:    /** File lock manager for this context. */
+node_modules\@jsonjoy.com\fs-node-to-fsa\lib\types.d.ts:    locks: FileLockManager;
+node_modules\@jsonjoy.com\fs-snapshot\node_modules\@jsonjoy.com\json-pack\lib\nfs\v3\locks\constants.d.ts: * Network Lock Manager (NLM) protocol constants (Appendix II)
+node_modules\@jsonjoy.com\fs-snapshot\node_modules\@jsonjoy.com\json-pack\lib\nfs\v3\locks\messages.d.ts: * Network Lock Manager (NLM) protocol messages (Appendix II)
+node_modules\@jsonjoy.com\fs-snapshot\node_modules\@jsonjoy.com\json-pack\lib\nfs\v3\locks\structs.d.ts: * Network Lock Manager (NLM) protocol structures (Appendix II)
+node_modules\@schematics\angular\ng-new\schema.d.ts:     * The package manager used to install dependencies.
+node_modules\@schematics\angular\ng-new\schema.d.ts:    packageManager?: PackageManager;
+node_modules\@schematics\angular\ng-new\schema.d.ts: * The package manager used to install dependencies.
+node_modules\@schematics\angular\ng-new\schema.d.ts:export declare enum PackageManager {
+node_modules\@schematics\angular\utility\dependency.d.ts: * a schematic. A package manager install task will be automatically scheduled as needed.
+node_modules\@schematics\angular\workspace\schema.d.ts:     * The package manager to use for installing dependencies.
+node_modules\@schematics\angular\workspace\schema.d.ts:    packageManager?: PackageManager;
+node_modules\@schematics\angular\workspace\schema.d.ts: * The package manager to use for installing dependencies.
+node_modules\@schematics\angular\workspace\schema.d.ts:export declare enum PackageManager {
+node_modules\@types\eslint\index.d.ts:    interface ScopeManager {
+node_modules\@types\eslint\index.d.ts:    scopeManager: Scope.ScopeManager;
+node_modules\@types\eslint\index.d.ts:        scopeManager?: Scope.ScopeManager | undefined;
+node_modules\@types\eslint\index.d.ts:            parseForESLint(text: string, options?: any): Omit<ESLintParseResult, "ast" | "scopeManager"> & {
+node_modules\@types\eslint\index.d.ts:                scopeManager?: unknown;
+node_modules\@types\eslint\index.d.ts:        scopeManager?: Scope.ScopeManager | undefined;
+node_modules\@types\eslint-scope\index.d.ts:export class ScopeManager implements eslint.Scope.ScopeManager {
+node_modules\@types\eslint-scope\index.d.ts:export function analyze(ast: {}, options?: AnalysisOptions): ScopeManager;
+node_modules\@types\node\process.d.ts:                 * within process manager applications such as macOS Activity Monitor or Windows
+node_modules\@types\node\process.d.ts:                 * Services Manager.
+node_modules\@types\node\web-globals\navigator.d.ts:import { LockManager } from "worker_threads";
+node_modules\@types\node\web-globals\navigator.d.ts:    readonly locks: LockManager;
+node_modules\@types\node\worker_threads.d.ts:    interface LockManagerSnapshot {
+node_modules\@types\node\worker_threads.d.ts:    interface LockManager {
+node_modules\@types\node\worker_threads.d.ts:        query(): Promise<LockManagerSnapshot>;
+node_modules\@types\node\worker_threads.d.ts:    // var LockManager: {
+node_modules\@types\node\worker_threads.d.ts:    //     prototype: LockManager;
+node_modules\@types\node\worker_threads.d.ts:    //     new(): LockManager;
+node_modules\@types\node\worker_threads.d.ts:    var locks: LockManager;
+node_modules\fast-glob\out\index.d.ts:import * as taskManager from './managers/tasks';
+node_modules\fast-glob\out\index.d.ts:    type Task = taskManager.Task;
+node_modules\fast-glob\out\providers\async.d.ts:import { Task } from '../managers/tasks';
+node_modules\fast-glob\out\providers\provider.d.ts:import { Task } from '../managers/tasks';
+node_modules\fast-glob\out\providers\stream.d.ts:import { Task } from '../managers/tasks';
+node_modules\fast-glob\out\providers\sync.d.ts:import { Task } from '../managers/tasks';
+node_modules\ignore\index.d.ts: * Creates new ignore manager.
+node_modules\ignore\index.d.ts:     * Adds one or several rules to the current manager.
+node_modules\license-webpack-plugin\dist\AssetManager.d.ts:interface AssetManager {
+node_modules\license-webpack-plugin\dist\AssetManager.d.ts:export { AssetManager };
+node_modules\license-webpack-plugin\dist\WebpackAssetManager.d.ts:import { AssetManager } from './AssetManager';
+node_modules\license-webpack-plugin\dist\WebpackAssetManager.d.ts:declare class WebpackAssetManager implements AssetManager {
+node_modules\license-webpack-plugin\dist\WebpackAssetManager.d.ts:export { WebpackAssetManager };
+node_modules\license-webpack-plugin\dist\WebpackCompilerHandler.d.ts:import { AssetManager } from './AssetManager';
+node_modules\license-webpack-plugin\dist\WebpackCompilerHandler.d.ts:    private assetManager;
+node_modules\license-webpack-plugin\dist\WebpackCompilerHandler.d.ts:    constructor(chunkIncludeTester: ChunkIncludeExcludeTester, chunkHandler: WebpackChunkHandler, assetManager: AssetManager, moduleCache: ModuleCache, addBanner: boolean, perChunkOutput: boolean, additionalChunkModules: {
+node_modules\listr2\dist\index.d.ts:declare class EventManager<Event extends string = string, Map extends Partial<Record<Event, unknown>> = Partial<Record<Event, any>>> {
+node_modules\listr2\dist\index.d.ts:declare class ListrTaskEventManager extends EventManager<ListrTaskEventType, ListrTaskEventMap> {
+node_modules\listr2\dist\index.d.ts:declare class Task<Ctx, Renderer extends ListrRendererFactory = ListrRendererFactory, FallbackRenderer extends ListrRendererFactory = ListrRendererFactory> extends ListrTaskEventManager {
+node_modules\listr2\dist\index.d.ts:declare class ListrEventManager extends EventManager<ListrEventType, ListrEventMap> {
+node_modules\listr2\dist\index.d.ts:    constructor(tasks: ListrDefaultRendererTask[], options: ListrDefaultRendererOptions, events: ListrEventManager);
+node_modules\listr2\dist\index.d.ts:    constructor(tasks: Task<any, ListrRendererFactory, ListrRendererFactory>[], options: typeof ListrRenderer.rendererOptions, events?: ListrEventManager);
+node_modules\listr2\dist\index.d.ts:    events: ListrEventManager;
+node_modules\listr2\dist\index.d.ts:export { ANSI_ESCAPE, ANSI_ESCAPE_CODES, BaseEventMap, Concurrency, DefaultRenderer, type EventData, EventManager, type EventMap, type Figures, LISTR_DEFAULT_RENDERER_STYLE, LISTR_LOGGER_STDERR_LEVELS, LISTR_LOGGER_STYLE, Listr, type ListrBaseClassOptions, type ListrContext, type ListrDefaultRenderer, type ListrDefaultRendererCache, ListrDefaultRendererLogLevels, type ListrDefaultRendererOptions, type ListrDefaultRendererOptionsStyle, type ListrDefaultRendererOutputBuffer, type ListrDefaultRendererTask, type ListrDefaultRendererTaskOptions, type ListrDefaultRendererValue, ListrEnvironmentVariables, ListrError, ListrErrorTypes, ListrEventManager, ListrEventMap, ListrEventType, type ListrGetRendererClassFromValue, type ListrGetRendererOptions, type ListrGetRendererTaskOptions, type ListrGetRendererValueFromClass, ListrLogLevels, ListrLogger, type ListrLoggerOptions, type ListrLoggerStyleMap, type ListrOptions, type ListrPrimaryRendererOptions, type ListrPrimaryRendererSelection, type ListrPrimaryRendererTaskOptions, type ListrPrimaryRendererValue, ListrPromptAdapter, ListrRenderer, type ListrRendererCacheMap, ListrRendererError, type ListrRendererFactory, type ListrRendererOptions, ListrRendererSelection, type ListrRendererTask, type ListrRendererValue, type ListrSecondaryRendererOptions, type ListrSecondaryRendererSelection, type ListrSecondaryRendererTaskOptions, type ListrSecondaryRendererValue, type ListrSilentRenderer, type ListrSilentRendererOptions, type ListrSilentRendererTask, type ListrSilentRendererTaskOptions, type ListrSilentRendererValue, type ListrSimpleRenderer, type ListrSimpleRendererCache, type ListrSimpleRendererOptions, type ListrSimpleRendererTask, type ListrSimpleRendererTaskOptions, type ListrSimpleRendererValue, type ListrSubClassOptions, type ListrTask, ListrTaskEventManager, ListrTaskEventMap, ListrTaskEventType, type ListrTaskFn, type ListrTaskMessage, Task as ListrTaskObject, type ListrTaskPrompt, type ListrTaskResult, type ListrTaskRetry, ListrTaskState, TaskWrapper as ListrTaskWrapper, type ListrTestRenderer, type ListrTestRendererOptions, type ListrTestRendererTask, type ListrTestRendererTaskOptions, type ListrTestRendererValue, type ListrVerboseRenderer, type ListrVerboseRendererCache, type ListrVerboseRendererOptions, type ListrVerboseRendererTask, type ListrVerboseRendererTaskOptions, type ListrVerboseRendererValue, type LoggerField, type LoggerFieldFn, type LoggerFieldOptions, type LoggerFormat, type LoggerFormatOptions, type ObservableLike, PRESET_TIMER, PRESET_TIMESTAMP, type PresetTimer, type PresetTimestamp, ProcessOutput, ProcessOutputBuffer, type ProcessOutputBufferEntry, type ProcessOutputBufferOptions, type ProcessOutputOptions, type ProcessOutputRendererOptions, ProcessOutputStream, type ProcessOutputStreamMap, PromptError, type ReadableLike, type RendererLoggerOptions, type RendererPresetTimer, type RendererPresetTimestamp, SilentRenderer, SimpleRenderer, Spinner, type SupportedRenderer, TestRenderer, TestRendererSerializer, type TestRendererSerializerOutput, type TestRendererSerializerTaskKeys, VerboseRenderer, assertFunctionOrSelf, cleanseAnsi, cloneObject, color, createWritable, delay, figures, getRenderer, getRendererClass, indent, isObservable, isReadable, isUnicodeSupported, parseTimer, parseTimestamp, splat };
+node_modules\thingies\lib\Locks.d.ts: * Creates a lock manager, which can create exclusive locks across browser tabs.
+node_modules\typescript\lib\lib.dom.d.ts:interface LockManagerSnapshot {
+node_modules\typescript\lib\lib.dom.d.ts: * [MDN Reference](https://developer.mozilla.org/docs/Web/API/LockManager)
+node_modules\typescript\lib\lib.dom.d.ts:interface LockManager {
+node_modules\typescript\lib\lib.dom.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/LockManager/query) */
+node_modules\typescript\lib\lib.dom.d.ts:    query(): Promise<LockManagerSnapshot>;
+node_modules\typescript\lib\lib.dom.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/LockManager/request) */
+node_modules\typescript\lib\lib.dom.d.ts:declare var LockManager: {
+node_modules\typescript\lib\lib.dom.d.ts:    prototype: LockManager;
+node_modules\typescript\lib\lib.dom.d.ts:    new(): LockManager;
+node_modules\typescript\lib\lib.dom.d.ts: * [MDN Reference](https://developer.mozilla.org/docs/Web/API/NavigationPreloadManager)
+node_modules\typescript\lib\lib.dom.d.ts:interface NavigationPreloadManager {
+node_modules\typescript\lib\lib.dom.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/NavigationPreloadManager/disable) */
+node_modules\typescript\lib\lib.dom.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/NavigationPreloadManager/enable) */
+node_modules\typescript\lib\lib.dom.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/NavigationPreloadManager/getState) */
+node_modules\typescript\lib\lib.dom.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/NavigationPreloadManager/setHeaderValue) */
+node_modules\typescript\lib\lib.dom.d.ts:declare var NavigationPreloadManager: {
+node_modules\typescript\lib\lib.dom.d.ts:    prototype: NavigationPreloadManager;
+node_modules\typescript\lib\lib.dom.d.ts:    new(): NavigationPreloadManager;
+node_modules\typescript\lib\lib.dom.d.ts:    readonly locks: LockManager;
+node_modules\typescript\lib\lib.dom.d.ts:    readonly storage: StorageManager;
+node_modules\typescript\lib\lib.dom.d.ts: * [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushManager)
+node_modules\typescript\lib\lib.dom.d.ts:interface PushManager {
+node_modules\typescript\lib\lib.dom.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushManager/getSubscription) */
+node_modules\typescript\lib\lib.dom.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushManager/permissionState) */
+node_modules\typescript\lib\lib.dom.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushManager/subscribe) */
+node_modules\typescript\lib\lib.dom.d.ts:declare var PushManager: {
+node_modules\typescript\lib\lib.dom.d.ts:    prototype: PushManager;
+node_modules\typescript\lib\lib.dom.d.ts:    new(): PushManager;
+node_modules\typescript\lib\lib.dom.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushManager/supportedContentEncodings_static) */
+node_modules\typescript\lib\lib.dom.d.ts:    readonly navigationPreload: NavigationPreloadManager;
+node_modules\typescript\lib\lib.dom.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/pushManager) */
+node_modules\typescript\lib\lib.dom.d.ts:    readonly pushManager: PushManager;
+node_modules\typescript\lib\lib.dom.d.ts: * [MDN Reference](https://developer.mozilla.org/docs/Web/API/StorageManager)
+node_modules\typescript\lib\lib.dom.d.ts:interface StorageManager {
+node_modules\typescript\lib\lib.dom.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/StorageManager/estimate) */
+node_modules\typescript\lib\lib.dom.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/StorageManager/getDirectory) */
+node_modules\typescript\lib\lib.dom.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/StorageManager/persist) */
+node_modules\typescript\lib\lib.dom.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/StorageManager/persisted) */
+node_modules\typescript\lib\lib.dom.d.ts:declare var StorageManager: {
+node_modules\typescript\lib\lib.dom.d.ts:    prototype: StorageManager;
+node_modules\typescript\lib\lib.dom.d.ts:    new(): StorageManager;
+node_modules\typescript\lib\lib.webworker.d.ts:interface LockManagerSnapshot {
+node_modules\typescript\lib\lib.webworker.d.ts: * [MDN Reference](https://developer.mozilla.org/docs/Web/API/LockManager)
+node_modules\typescript\lib\lib.webworker.d.ts:interface LockManager {
+node_modules\typescript\lib\lib.webworker.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/LockManager/query) */
+node_modules\typescript\lib\lib.webworker.d.ts:    query(): Promise<LockManagerSnapshot>;
+node_modules\typescript\lib\lib.webworker.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/LockManager/request) */
+node_modules\typescript\lib\lib.webworker.d.ts:declare var LockManager: {
+node_modules\typescript\lib\lib.webworker.d.ts:    prototype: LockManager;
+node_modules\typescript\lib\lib.webworker.d.ts:    new(): LockManager;
+node_modules\typescript\lib\lib.webworker.d.ts: * [MDN Reference](https://developer.mozilla.org/docs/Web/API/NavigationPreloadManager)
+node_modules\typescript\lib\lib.webworker.d.ts:interface NavigationPreloadManager {
+node_modules\typescript\lib\lib.webworker.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/NavigationPreloadManager/disable) */
+node_modules\typescript\lib\lib.webworker.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/NavigationPreloadManager/enable) */
+node_modules\typescript\lib\lib.webworker.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/NavigationPreloadManager/getState) */
+node_modules\typescript\lib\lib.webworker.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/NavigationPreloadManager/setHeaderValue) */
+node_modules\typescript\lib\lib.webworker.d.ts:declare var NavigationPreloadManager: {
+node_modules\typescript\lib\lib.webworker.d.ts:    prototype: NavigationPreloadManager;
+node_modules\typescript\lib\lib.webworker.d.ts:    new(): NavigationPreloadManager;
+node_modules\typescript\lib\lib.webworker.d.ts:    readonly locks: LockManager;
+node_modules\typescript\lib\lib.webworker.d.ts:    readonly storage: StorageManager;
+node_modules\typescript\lib\lib.webworker.d.ts: * [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushManager)
+node_modules\typescript\lib\lib.webworker.d.ts:interface PushManager {
+node_modules\typescript\lib\lib.webworker.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushManager/getSubscription) */
+node_modules\typescript\lib\lib.webworker.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushManager/permissionState) */
+node_modules\typescript\lib\lib.webworker.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushManager/subscribe) */
+node_modules\typescript\lib\lib.webworker.d.ts:declare var PushManager: {
+node_modules\typescript\lib\lib.webworker.d.ts:    prototype: PushManager;
+node_modules\typescript\lib\lib.webworker.d.ts:    new(): PushManager;
+node_modules\typescript\lib\lib.webworker.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushManager/supportedContentEncodings_static) */
+node_modules\typescript\lib\lib.webworker.d.ts:    readonly navigationPreload: NavigationPreloadManager;
+node_modules\typescript\lib\lib.webworker.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/pushManager) */
+node_modules\typescript\lib\lib.webworker.d.ts:    readonly pushManager: PushManager;
+node_modules\typescript\lib\lib.webworker.d.ts: * [MDN Reference](https://developer.mozilla.org/docs/Web/API/StorageManager)
+node_modules\typescript\lib\lib.webworker.d.ts:interface StorageManager {
+node_modules\typescript\lib\lib.webworker.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/StorageManager/estimate) */
+node_modules\typescript\lib\lib.webworker.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/StorageManager/getDirectory) */
+node_modules\typescript\lib\lib.webworker.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/StorageManager/persisted) */
+node_modules\typescript\lib\lib.webworker.d.ts:declare var StorageManager: {
+node_modules\typescript\lib\lib.webworker.d.ts:    prototype: StorageManager;
+node_modules\typescript\lib\lib.webworker.d.ts:    new(): StorageManager;
+node_modules\webpack\node_modules\watchpack\types\DirectoryWatcher.d.ts:	 * @param {WatcherManager} watcherManager a watcher manager
+node_modules\webpack\node_modules\watchpack\types\DirectoryWatcher.d.ts:		watcherManager: WatcherManager,
+node_modules\webpack\node_modules\watchpack\types\DirectoryWatcher.d.ts:	watcherManager: import("./getWatcherManager").WatcherManager;
+node_modules\webpack\node_modules\watchpack\types\DirectoryWatcher.d.ts:		WatcherManager,
+node_modules\webpack\node_modules\watchpack\types\DirectoryWatcher.d.ts:/** @typedef {import("./getWatcherManager").WatcherManager} WatcherManager */
+node_modules\webpack\node_modules\watchpack\types\DirectoryWatcher.d.ts:type WatcherManager = import("./getWatcherManager").WatcherManager;
+node_modules\webpack\node_modules\watchpack\types\getWatcherManager.d.ts:declare function _exports(options: DirectoryWatcherOptions): WatcherManager;
+node_modules\webpack\node_modules\watchpack\types\getWatcherManager.d.ts:	export { WatcherManager };
+node_modules\webpack\node_modules\watchpack\types\getWatcherManager.d.ts:declare class WatcherManager {
+node_modules\webpack\node_modules\watchpack\types\index.d.ts:	/** @type {WatcherManager} */
+node_modules\webpack\node_modules\watchpack\types\index.d.ts:	watcherManager: WatcherManager;
+node_modules\webpack\node_modules\watchpack\types\index.d.ts:		WatcherManager,
+node_modules\webpack\node_modules\watchpack\types\index.d.ts:type WatcherManager = import("./getWatcherManager").WatcherManager;
+node_modules\webpack\types.d.ts:	 * List of paths that are managed by a package manager and contain a version or hash in its path so all files are immutable.
+node_modules\webpack\types.d.ts:	 * List of paths that are managed by a package manager and can be trusted to not be modified otherwise.
+node_modules\webpack\types.d.ts:	 * List of paths that are managed by a package manager and contain a version or hash in its path so all files are immutable.
+node_modules\webpack\types.d.ts:	 * List of paths that are managed by a package manager and can be trusted to not be modified otherwise.
+node_modules\webpack\types.d.ts:	 * List of paths that are not managed by a package manager and the contents are subject to change.
+node_modules\zone.js\lib\zone.configurations.api.d.ts:         * {passive: true});` or implement your own `EventManagerPlugin`.
+src\app\app.routes.ts:import { adminGuard, managerGuard } from './shared/guards/role.guard';
+src\app\app.routes.ts: * Port 4200 → /auth/login   (Manager / Vendor portal)
+src\app\app.routes.ts:            { path: 'inventory', canActivate: [managerGuard], loadComponent: () => import('./inventory/inventory.component').then(m => m.InventoryComponent) },
+src\app\app.routes.ts:            { path: 'transactions', canActivate: [managerGuard], loadComponent: () => import('./transactions/transactions.component').then(m => m.TransactionsComponent) },
+src\app\app.routes.ts:            { path: 'forecasting', canActivate: [managerGuard], loadComponent: () => import('./forecasting/forecasting.component').then(m => m.ForecastingComponent) },
+src\app\app.routes.ts:            { path: 'analytics', canActivate: [managerGuard], loadComponent: () => import('./analytics/analytics.component').then(m => m.AnalyticsComponent) },
+src\app\auth\admin-login\admin-login.component.html:    <div class="warehouse-panel">
+src\app\auth\admin-login\admin-login.component.html:        <div class="warehouse-overlay"></div>
+src\app\auth\admin-login\admin-login.component.html:        <div class="warehouse-tagline">
+src\app\auth\login\login.component.html:    <div class="warehouse-panel">
+src\app\auth\login\login.component.html:        <div class="warehouse-overlay"></div>
+src\app\auth\login\login.component.html:        <div class="warehouse-tagline">
+src\app\auth\login\login.component.html:            <p>AI-powered forecasting that keeps your warehouse ahead of demand</p>
+src\app\auth\login\login.component.ts:            case 'MANAGER': this.router.navigate(['/dashboard']); break;
+src\app\auth\register\register.component.html:                            <option value="MANAGER">Warehouse Manager</option>
+src\app\auth\register\register.component.html:    <div class="warehouse-panel">
+src\app\auth\register\register.component.html:        <div class="warehouse-overlay"></div>
+src\app\auth\register\register.component.html:        <div class="warehouse-tagline">
+src\app\auth\register\register.component.html:            <h2>Join Thousands of<br><span>Smart Warehouses</span></h2>
+src\app\auth\reset-password\reset-password.component.ts:                this.triggerPasswordManagerSave(emailVal, passVal);
+src\app\auth\reset-password\reset-password.component.ts:    triggerPasswordManagerSave(email: string, password: string) {
+src\app\dashboard\dashboard.component.html:    <!-- ── ADMIN / MANAGER DASHBOARD ─────────────────────────────── -->
+src\app\dashboard\dashboard.component.ts:    get isManager() { return this.auth.getRole() === 'MANAGER'; }
+src\app\orders\orders.component.html:       ADMIN / MANAGER VIEW
+src\app\orders\orders.component.ts:    get isManager() { return this.role === 'MANAGER'; }
+src\app\orders\orders.component.ts:                this.notify.success('✅ Order approved! Manager has been notified.');
+src\app\orders\orders.component.ts:                this.notify.success('❌ Order rejected. Manager has been notified.');
+src\app\shared\guards\port-redirect.guard.ts: *  - Any other  →  /auth/login   (Manager / Vendor Portal)
+src\app\shared\guards\role.guard.ts:export const managerGuard: CanActivateFn = () => {
+src\app\shared\guards\role.guard.ts:    if (['ADMIN', 'MANAGER'].includes(auth.getRole())) return true;
+src\app\shared\models\interfaces.ts:    role: 'ADMIN' | 'MANAGER' | 'VENDOR';
+src\app\shared\services\auth.service.ts:    isManager(): boolean { return ['ADMIN', 'MANAGER'].includes(this.getRole()); }
+src\app\shared\services\auth.service.ts:                role: (localStorage.getItem('ssxRole') as any) || 'MANAGER'
+src\app\shared\sidebar\sidebar.component.ts:        { section: 'OVERVIEW', roles: ['ADMIN', 'MANAGER', 'VENDOR'], items: [{ label: 'Dashboard', icon: '📊', route: '/dashboard' }] },
+src\app\shared\sidebar\sidebar.component.ts:            section: 'INVENTORY', roles: ['ADMIN', 'MANAGER'], items: [
+src\app\shared\sidebar\sidebar.component.ts:            section: 'STOCK OPS', roles: ['ADMIN', 'MANAGER'], items: [
+src\app\shared\sidebar\sidebar.component.ts:            section: 'AI & FORECAST', roles: ['ADMIN', 'MANAGER'], items: [
+src\app\shared\sidebar\sidebar.component.ts:        { section: 'PURCHASE ORDERS', roles: ['ADMIN', 'MANAGER', 'VENDOR'], items: [{ label: 'Purchase Orders', icon: '🛒', route: '/orders' }] },
+src\app\shared\sidebar\sidebar.component.ts:        { section: 'REPORTS', roles: ['ADMIN', 'MANAGER'], items: [{ label: 'Reports & Analytics', icon: '📈', route: '/analytics' }] },
+src\app\shared\sidebar\sidebar.component.ts:        { section: 'NOTIFICATIONS', roles: ['ADMIN', 'MANAGER', 'VENDOR'], items: [{ label: 'Notifications', icon: '🔔', route: '/alerts' }] },
+src\app\shared\sidebar\sidebar.component.ts:        return r === 'ADMIN' ? 'role-admin' : r === 'MANAGER' ? 'role-manager' : 'role-vendor';
+src\app\shared\sidebar\sidebar.component.ts:        return r === 'ADMIN' ? 'Administrator' : r === 'MANAGER' ? 'Warehouse Manager' : 'Vendor';
+src\app\users\users.component.html:            <option value="MANAGER">Manager</option>
+src\app\users\users.component.ts:        return role === 'ADMIN' ? 'badge-admin' : role === 'MANAGER' ? 'badge-manager' : 'badge-vendor';

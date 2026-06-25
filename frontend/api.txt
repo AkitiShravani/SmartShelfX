@@ -1,0 +1,8 @@
+node_modules\@types\node\http.d.ts:         *   http.get('http://localhost:3000', { agent }, (res) => {
+node_modules\@types\node\http.d.ts:         *     .get('http://localhost:3000', { agent }, (res) => {
+node_modules\@types\node\inspector.d.ts:     * $ node --inspect=localhost:3000 -p 'inspector.url()'
+node_modules\@types\node\inspector.d.ts:     * Debugger listening on ws://localhost:3000/51cf8d0e-3c36-4c59-8efd-54519839e56a
+node_modules\@types\node\inspector.d.ts:     * ws://localhost:3000/51cf8d0e-3c36-4c59-8efd-54519839e56a
+node_modules\@types\node\inspector.d.ts:         *   const mapUrl = 'http://localhost:3000/dist/app.js.map';
+node_modules\@types\node\inspector.d.ts:         *   const tsUrl = 'http://localhost:3000/src/app.ts';
+node_modules\undici-types\mock-call-history.d.ts:  /** request's origin. ie. https://localhost:3000. */
